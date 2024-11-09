@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+          </head>
+    <body>
+        
+        <br>
+        <div class="main-box">
+        <div class="box1">
+            <div class="text">ID Maker</div>
+            <div class="basic-space"></div>
+            <label>Input Fullname</label><br>
+            <input type="text" class="name" id="name" onchange="fullName()">
+            
+            <div class="basic-space"></div>
+                <label>Program</label><br>
+            <input type="text" class="program" id="program" onchange="program()">
+               <div class="basic-space"></div>
+                <label>Student Number</label><br>
+            <input type="tel" class="Student-Number" id="stdid" onchange="stdId()">
+            
+             <div class="basic-space"></div>
+                <label>Passport photo</label>
+            <input type="file" accept="image/*" onchange="preview_image(event)" class="image">
+        </div>
+            
+            
+            <div class="box2">
+                <div class="text1">Preview</div>
+                <div class="idbox">
+                    <img src="logo.PNG" width="70%" class="logo"><br>
+                    <div class="details">
+               <div class="text2">FullName: <strong><span class="name-show" id="showname"></span> </strong> </div>  <br>
+                    <div class="text2"> Program: <strong> <span class="program-show" id="showprogram"></span></strong></div>
+                    <br>
+                    <div class="text2">Student Number: <span class="id-show" id="showid"></span></div>
+   
+         <img id="output_image" onclick="preview()"class="id-image"/>
+                     
+                </div>
+                </div> 
+                <div class="buttons">
+                        <button type="button" class="print" onclick="myBtn()">
+                     Print</button>
+                        </div>     
+             </div>  
+                <script>
+                    
+          
+            </script>
+           
+        </div>
+ <script src="myapp.js"></script>
+    </body>
+</html>
